@@ -1,0 +1,24 @@
+header {
+ background-image: img src="banner.jpg";
+	
+}
+
+footer {
+ background-color: dimgrey;	
+ margin-top: 20px;	
+}
+
+h5 {
+	font-weight: bold;
+	color: darkgreen;
+	font-size: 20px;
+	text-align: center;
+	
+}
+
+a {
+	text-decoration: none;
+	color: darkgreen;
+	
+	
+}

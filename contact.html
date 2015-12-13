@@ -1,0 +1,102 @@
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<title>Contact - Save the Dinosaurs Park</title>
+		<link rel="stylesheet" href="contact.css" />
+	</head>
+	<body>
+	<script>
+		function CheckValues()
+		{
+			var msgName = document.getElementById('name').value;
+			var msgEmail = document.getElementById('email').value;
+			var msgSubj = document.getElementById('subject').value;
+			var msgMessage = document.getElementById('message').value;
+			var pattern = /.+\@.+\..+/;
+			var res = pattern.test(msgEmail);
+			if (!res)
+				alert('bad email addr');
+			else
+				document.write("Thanks for your submission!")
+		}
+	</script>
+			<section id="header">
+				<nav id="nav">
+					<ul>
+						<li><a href="index.html">Home</a></li>
+						<li><a href="visit.html">Visit</a></li>
+						<li><a href="contact.html" class="active">Contact</a></li>
+					</ul>
+				</nav>
+				<footer>
+					<ul class="icons">
+						<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+						<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+						<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+						<li><a href="#" class="icon fa-github"><span class="label">Github</span></a></li>
+						<li><a href="#" class="icon fa-envelope"><span class="label">Email</span></a></li>
+					</ul>
+				</footer>
+			</section>
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+					<div id="main">
+							<section id="one">
+								<div class="container">
+									<h3>Contact Us</h3>
+									<p>Within the Seattle city limits, Seward Park boasts 300 acres of beautiful forest land, home to eagles' nests, old growth forest, a 2.4 mile bike and walking path, an amphitheater, a native plant garden, an art studio, miles of hiking trails, shoreline, beaches and more.</p>
+									<div class="features">
+										<article>
+											<a href="#" class="image"><img src="map.png" alt="" /></a>
+											<br><br><br>
+											<h4>Address and contact info</h4>
+												<p>Phone: <b>(206) 684-4075</b></p>
+													<h5><font color="red">24-Hour Emergency Line: (206) 684-7250</font>
+													</h5>
+												<p>
+													Do you see one of our dinosaurs outside its area ? Please call immediately at (206) 684-7250.
+												</p>
+										</article>
+									</div>
+								</div>
+							</section>
+
+							<section id="two">
+								<div class="container">
+									<h3>Contact Form</h3>
+									<form method="post" action="#">
+										<div class="row uniform">
+											<div class="6u 12u(xsmall)"><input type="text" name="name" id="name" placeholder="Name" /></div>
+											<div class="6u 12u(xsmall)"><input type="email" name="email" id="email" placeholder="Email" /></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u"><input type="text" name="subject" id="subject" placeholder="Subject" /></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u"><textarea name="message" id="message" placeholder="Message" rows="6"></textarea></div>
+										</div>
+										<div class="row uniform">
+											<div class="12u">
+												<ul class="actions">
+													<li><input onclick="CheckValues();" type="submit" class="special" value="Send Message" /></li>
+													<li><input type="reset" value="Reset Form" /></li>
+												</ul>
+											</div>
+										</div>
+									</form>
+								</div>
+							</section>
+					</div>
+				<!-- Footer -->
+					<section id="footer">
+						<div class="container">
+							<ul class="copyright">
+								<li>&copy; Save the dinosaurs 2015. All rights reserved.</li>
+							</ul>
+						</div>
+					</section>
+			</div>
+	</body>
+</html>
